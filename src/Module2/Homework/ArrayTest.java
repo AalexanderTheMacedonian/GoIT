@@ -26,7 +26,7 @@ public class ArrayTest {
                 swap(array[i], array[i + 1]);
             }
         }
-        return array[array.length - 1];
+        return array[array.length - 2];
     }*/
 
     private static int modulus(int[] array){

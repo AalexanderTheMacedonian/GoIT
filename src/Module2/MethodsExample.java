@@ -9,8 +9,6 @@ public class MethodsExample {
 
         test(500, (byte) 5);
 
-        test1(100);
-
     }
 
     static int test(int a, byte b) {

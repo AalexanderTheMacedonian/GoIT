@@ -5,17 +5,19 @@ package Module2.Homework;
  */
 public class Bank3 {
     public static void main(String[] args) {
-        int[] balances = {1200, 250, 2000, 500, 3200};
-        String[] ownerNames = {"Jane", "Ann", "Jack", "Oww", "Lane"};
-        String a = "Jack"
+        String a = "Jack";
+        with(a, 399);
     }
 
 
     public static double with(String a, double withdrawal) {
-        int b;
+        int[] balances = {1200, 250, 2000, 500, 3200};
+        String[] ownerNames = {"Jane", "Ann", "Jack", "Oww", "Lane"};
+        double b = 0;
+        int index = 0;
         for (String s : ownerNames) {
-            if (s.contentEquals(a) == 1) {
-                b = ownersNamew[index];
+            if (s.contentEquals(a)) {
+                b = balances[index];
             }
             index++;
         }
