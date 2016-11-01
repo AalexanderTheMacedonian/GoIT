@@ -26,7 +26,6 @@ public class Task1 {
 
         for(int bal : balances){
             if(bal > 1000) {
-                count += 1;
                 owners[indexOwners] = names[index];
                 indexOwners++;
             }
