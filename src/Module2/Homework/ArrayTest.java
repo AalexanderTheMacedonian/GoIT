@@ -14,7 +14,7 @@ public class ArrayTest {
         System.out.println(max(array));
         System.out.println(maxPositive(array));
         System.out.println(multiplication(array));
-       // System.out.println(modulus(array));
+        System.out.println(modulus(array));
        // System.out.println(secondLargest(array));
 
 
@@ -29,7 +29,10 @@ public class ArrayTest {
         return array[array.length - 1];
     }*/
 
-   // private static int modulus(int[] array)
+    private static int modulus(int[] array){
+        int q = array[0]%array[array.length];
+        return q;
+    }
 
     private static int max(int[] array) {
         int ma = array[0];

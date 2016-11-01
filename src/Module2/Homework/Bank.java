@@ -5,7 +5,8 @@ public class Bank {
     public static void main(String[] args) {
 
     }
-       public static double with(double b, double t) {
+
+    public static double with(double b, double t) {
             double com = t * 0.05;
             double tot = t + com;
             if (tot > b)
