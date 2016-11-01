@@ -1,4 +1,4 @@
-package Module2.Homework;
+package Module2;
 
 /**
  * Created by alexandrsemenov on 01.11.16.
@@ -10,5 +10,8 @@ public class LogicalOperators {
 
 
         System.out.println(isActive && isLoggedIn);
+
+
+
     }
 }
