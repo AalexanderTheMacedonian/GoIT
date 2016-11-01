@@ -22,10 +22,10 @@ public class Bank3 {
         double com = withdrawal * 0.05;
         double tot = withdrawal + com;
         if (tot > b)
-            System.err.println("NO");
+            System.err.println(a + " NO");
         else {
             b = b - tot;
-            System.out.println("OK " + com + " " + b);
+            System.out.println(a + " " + withdrawal + " " + b);
         }
         return b;
     }
