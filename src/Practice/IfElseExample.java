@@ -1,4 +1,4 @@
-package Module1.Practice;
+package Practice;
 
 /**
  * Created by alexandrsemenov on 29.10.16.

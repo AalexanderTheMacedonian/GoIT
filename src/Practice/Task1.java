@@ -1,6 +1,5 @@
-package Module1.Practice;
+package Practice;
 
-import java.lang.reflect.Array;
 import java.util.Arrays;
 
 /**

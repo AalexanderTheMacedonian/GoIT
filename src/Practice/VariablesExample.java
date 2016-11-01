@@ -1,4 +1,4 @@
-package Module1.Practice;
+package Practice;
 
 import java.util.Random;
 
