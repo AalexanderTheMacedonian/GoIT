@@ -3,20 +3,19 @@ package Module2.Homework; /**
  */
 public class Bank {
     public static void main(String[] args) {
-        double balance;
-        double transact;
-        double com = transact*0.05;
-        double tot = transact + com;
-        if (tot > balance){
-            System.err.println("NO");
+
+        public static double with(double b, double t) {
+            double com = t * 0.05;
+            double tot = t + com;
+            if (tot > b) {
+                System.err.println("NO");
+            } else {
+                b = b - tot;
+                System.out.println("OK " + com + " " + b);
+            }
+            return b;
+
         }
-        else{
-            balance = balance - tot;
-            System.out.println("OK " + com + " " + balance);
-        }
-
-
-
     }
 }
 
