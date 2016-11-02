@@ -6,8 +6,8 @@ package Module2.Homework;
 public class ArrayTest {
     public static void main(String[] args) {
         int[] array = new int[10];
-        array[1] = -2;
-        array[4] = 10;
+        array[0] = 10;
+        array[4] = -2;
 
         System.out.println(sum(array));
         System.out.println(min(array));
@@ -15,22 +15,30 @@ public class ArrayTest {
         System.out.println(maxPositive(array));
         System.out.println(multiplication(array));
         System.out.println(modulus(array));
-       // System.out.println(secondLargest(array));
+        System.out.println(secondLargest(array));
 
 
     }
 
-   /* private static int secondLargest(int[] array) {
-        for (int i = 0; i < array.length; i++) {
-            if (array[i] > array[i + 1]) {
-                swap(array[i], array[i + 1]);
+    private static int secondLargest(int[] array) {
+
+        for(int i = array.length-1 ; i > 0 ; i--){
+            for(int j = 0 ; j < i ; j++){
+                if(array[j] > array[j+1]){
+                int l = array[j];
+                array[j] = array[j+1];
+                array[j+1] = l;
+                }
             }
         }
         return array[array.length - 2];
-    }*/
+    }
 
     private static int modulus(int[] array){
-        int q = array[0]%array[array.length];
+        int q = 0;
+        if(array[array.length] != 0) {
+            q = array[0] % array[array.length];
+        }
         return q;
     }
 
@@ -73,9 +81,9 @@ public class ArrayTest {
     }
 
     private static int maxPositive(int[] array) {
-        int m = array[0];
+        int m = 0;
         for (int arr : array) {
-            if(arr > m){
+            if(arr > m && arr > 0){
                 m = arr;
             }
         }
