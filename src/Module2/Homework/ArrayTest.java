@@ -17,21 +17,20 @@ public class ArrayTest {
         System.out.println(modulus(array));
         System.out.println(secondLargest(array));
 
-
     }
 
-    private static int secondLargest(int[] array) {
 
-        for(int i = array.length-1 ; i > 0 ; i--){
-            for(int j = 0 ; j < i ; j++){
-                if(array[j] > array[j+1]){
-                int l = array[j];
-                array[j] = array[j+1];
-                array[j+1] = l;
+    private static int secondLargest(int[] array) {
+        for(int j = 2; j>0; j--) {
+            for (int i = 0; i < array.length; i++) {
+                if (array[i] > array[i + 1]) {
+                    int l = array[i];
+                    array[i] = array[i + 1];
+                    array[i + 1] = l;
                 }
             }
         }
-        return array[array.length - 2];
+            return array[array.length - 2];
     }
 
     private static int modulus(int[] array){
