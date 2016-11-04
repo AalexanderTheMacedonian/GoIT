@@ -7,13 +7,13 @@ public class Bank {
     }
 
     public static double withdraw(double balance, double transaction) {
-            double com = transaction * 0.05;
-            double total = transaction + com;
+            double commision = transaction * 0.05;
+            double total = transaction + commision;
             if (total >  balance)
                 System.err.println("NO");
             else {
                  balance =  balance - total;
-                System.out.println("OK " + com + " " +  balance);
+                System.out.println("OK " + commision + " " +  balance);
             }
             return  balance;
         }
