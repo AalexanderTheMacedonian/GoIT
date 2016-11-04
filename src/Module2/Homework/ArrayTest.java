@@ -35,7 +35,7 @@ public class ArrayTest {
 
     private static int modulus(int[] array){
         int q = 0;
-        if(array[array.length] != 0) {
+        if(array[array.length-1] != 0) {
             q = array[0] % array[array.length-1];
         }
         return q;
