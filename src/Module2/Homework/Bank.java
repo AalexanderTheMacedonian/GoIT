@@ -6,17 +6,18 @@ public class Bank {
 
     }
 
-    public static double with(double b, double t) {
-            double com = t * 0.05;
-            double tot = t + com;
-            if (tot > b)
+    public static double withdraw(double balance, double transaction) {
+            double com = transaction * 0.05;
+            double total = transaction + com;
+            if (total >  balance)
                 System.err.println("NO");
             else {
-                b = b - tot;
-                System.out.println("OK " + com + " " + b);
+                 balance =  balance - total;
+                System.out.println("OK " + com + " " +  balance);
             }
-            return b;
+            return  balance;
         }
     }
+
 
 
