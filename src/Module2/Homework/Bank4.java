@@ -18,6 +18,7 @@ public class Bank4 {
         for (String s : ownerNames) {
             if (s.contentEquals(ownerName)) {
                 b = balances[index];
+                break;
             }
             index++;
         }
