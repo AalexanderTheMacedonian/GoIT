@@ -15,14 +15,14 @@ public class User {
     public void paySalary(){
         balance+=salary;
     }
-    public double withdraw(int sum) {
+    public void withdraw(int sum) {
         double commision = 0;
         if (sum < 1000)
             commision = 0.05;
         else{
             commision = 0.1;
         }
-        return balance = balance - balance*commision;
+        balance = balance - balance*commision;
     }
     public int companyNameLenght(){
         return companyName.length();
