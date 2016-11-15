@@ -1,4 +1,4 @@
-package Practice;
+package Practice.lesson1;
 
 /**
  * Created by alexandrsemenov on 29.10.16.
