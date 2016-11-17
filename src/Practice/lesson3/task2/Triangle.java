@@ -4,14 +4,12 @@ package Practice.lesson3.task2;
  * Created by alexandrsemenov on 14.11.16.
  */
 public class Triangle {
-
     private int x1;
     private int y1;
     private int x2;
     private int y2;
     private int x3;
     private int y3;
-
     double line1;
     double line2;
     double line3;
@@ -37,7 +35,6 @@ public class Triangle {
         double perimeter = calculatePerimeter(line1, line2, line3);
         double halfOfPeremetr = perimeter/2;
         return Math.sqrt(halfOfPeremetr * (halfOfPeremetr - line1)*(halfOfPeremetr-line2)*(halfOfPeremetr-line3));
-
     }
 
 
