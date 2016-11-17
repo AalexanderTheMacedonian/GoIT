@@ -26,5 +26,7 @@ public class Main {
         bankSystem.fundUser(user5, 500);
         bankSystem.paySalary(user6);
         bankSystem.transferMoney(user3,user1,99999);
+
+        System.out.println(user1.toString());
     }
 }
