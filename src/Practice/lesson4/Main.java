@@ -31,8 +31,6 @@ public class Main {
 
         String[] array = dao.getList();
 
-        dao.addNewWord("www");
-
-        dao.getList();
+        dao.addNewWord(monthToAdd);
     }
 }
