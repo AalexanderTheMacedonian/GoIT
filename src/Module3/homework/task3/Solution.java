@@ -30,9 +30,5 @@ public class Solution {
         SpecialStudent st7 = new SpecialStudent("LastName", courses1);
         SpecialStudent st8 = new SpecialStudent("FirstName", "LastName", 10, "CollegeName", 2, 55378, 1234567);
 
-
-
-
-
     }
 }
