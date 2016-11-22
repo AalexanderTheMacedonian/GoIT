@@ -11,9 +11,6 @@ public class Main {
         String monthUpdateSrc = null;
         String monthUpdateDest = null;
 
-
-
-
         switch (user) {
             case "eng":
                 dao = new DAOeng();
@@ -37,7 +34,5 @@ public class Main {
         dao.addNewWord("www");
 
         dao.getList();
-
-
     }
 }
