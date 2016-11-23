@@ -41,5 +41,4 @@ public class GoogleAPI implements API {
     public Room[] getRooms() {
         return GoogleRooms;
     }
-
 }

@@ -4,7 +4,7 @@ package module5.homework;
  * Created by alexandrsemenov on 23.11.16.
  */
 public class Controller {
-    API[] apis = {new BookingComAPI(), new GoogleAPI()};
+    API[] apis = {new BookingComAPI(), new GoogleAPI(), new TripAdvisorAPI()};
 
     Room[] requstRooms(int price, int persons, String city, String hotel){
         int count = 0;
