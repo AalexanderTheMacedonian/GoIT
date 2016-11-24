@@ -27,7 +27,7 @@ public class DAOimpl implements DAO {
 
     @Override
     public Room findById(long id) {
-        Room room = new Room(12, 333, 2,new Date(),"KKK", "Lviv");
+        Room room = new Room(20, 300, 2,new Date(),"hotel", "city");
         System.out.println("Searching room by id number :"+id);
         return room;
     }
