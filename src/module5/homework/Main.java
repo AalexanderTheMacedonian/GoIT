@@ -22,6 +22,6 @@ public class Main {
         DAO dao = new DAOimpl();
         dao.save(r1);
         dao.delete(r1);
-
+        //Паша привет)
     }
 }
