@@ -5,10 +5,6 @@ package module6.homework;
  */
 public final class ArraysUtils {
 
-
-
-
-
     public static int secondLargest(int[] array) {
         for(int j = 2; j>0; j--) {
             for (int i = 0; i < array.length; i++) {
@@ -79,11 +75,30 @@ public final class ArraysUtils {
     }
 
     public static int[] reverse(int[] array){
-        return new int[0];
+        for(int i = 0; i < array.length / 2; i++) {
+            int temp = array[i];
+            array[i] = array[array.length - i - 1];
+            array[array.length - i - 1] = temp;
+        }
+        return array;
     }
 
     public static int[] findEvenElements(int[] array){
-        return new int[0];
+        int count = 0;
+        for (int elem : array) {
+            if (elem % 2 == 0) {
+                count++;
+            }
+        }
+        int[] evens = new int[count];
+        int index = 0;
+        for (int elem : array) {
+            if (elem % 2 == 0) {
+                evens[index] = elem;
+                index++;
+            }
+        }
+        return evens;
     }
 
 }
