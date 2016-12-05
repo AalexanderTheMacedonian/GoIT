@@ -53,7 +53,10 @@ public class UserUtils {
         User[] res = new User[users.length-quantityOfEmptyUs];
         int index = 0;
         for (User user : users){
-            if(user != null) res[index] = user;
+            if(user != null){
+                res[index] = user;
+                index++;
+            }
         }
         return res;
     }
