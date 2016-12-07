@@ -41,6 +41,7 @@ public class UserUtils {
         int index = 0;
         for (User user : users){
             res[index] = user.getId();
+            index++;
         }
         return res;
     }
