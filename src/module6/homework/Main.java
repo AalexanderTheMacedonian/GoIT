@@ -11,12 +11,11 @@ public class Main {
         users[2]= new User(3, "Bob", "Green", 3500, 7000);
         users[3]= new User(1, "Alex", "Black", 3500, 9000);
 
-        UserUtils userUtils = new UserUtils();
 
-        for (User user : userUtils.uniqueUsers(users)){
+        for (User user : UserUtils.uniqueUsers(users)){
             System.out.println(user.getFirstName());
         }
-        for (User user : userUtils.usersWithConditionalBalance(users, 7000)){
+        for (User user : UserUtils.usersWithConditionalBalance(users, 7000)){
             System.out.println(user.getFirstName());
         }
     }

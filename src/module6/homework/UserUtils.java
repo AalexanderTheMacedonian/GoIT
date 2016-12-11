@@ -5,7 +5,7 @@ package module6.homework;
  */
 public class UserUtils {
 
-    User[] uniqueUsers(User[] users){
+    static User[] uniqueUsers(User[] users){
         for (int i = 0; i < users.length-1; i++) {
             for (int j = 1; j < users.length; j++) {
                 if (users[i].equals(users[j])) users[j] = null;
@@ -14,7 +14,7 @@ public class UserUtils {
         return deleteEmptyUsers(users);
     }
 
-    User[] usersWithConditionalBalance(User[] users, int balance){
+    static User[] usersWithConditionalBalance(User[] users, int balance){
         int count = 0;
         for (User us : users) {
             if (us.getBalance() == balance) count++;
@@ -30,13 +30,13 @@ public class UserUtils {
         return res;
     }
 
-    final void paySalaryToUsers(User[] users){
+    static final void paySalaryToUsers(User[] users){
         for (User us : users){
             us.setBalance(us.getBalance()+us.getSalary());
         }
     }
 
-    final long[] getUsersId(User[] users){
+    static final long[] getUsersId(User[] users){
         long[] res = new long[users.length];
         int index = 0;
         for (User user : users){
@@ -46,7 +46,7 @@ public class UserUtils {
         return res;
     }
 
-    User[] deleteEmptyUsers(User[] users){
+    static User[] deleteEmptyUsers(User[] users){
         int quantityOfEmptyUs = 0;
         for (User user : users){
             if (user == null) quantityOfEmptyUs++;
