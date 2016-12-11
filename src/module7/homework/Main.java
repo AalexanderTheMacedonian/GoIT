@@ -68,7 +68,6 @@ public class Main {
                 }
             }
         }
-
     }
 
     private static void splitByCurrency(List<Order> list) {
