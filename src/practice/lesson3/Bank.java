@@ -3,7 +3,7 @@ package practice.lesson3;
 /**
  * Created by alexandrsemenov on 14.11.16.
  */
-    class Bank {
+class Bank {
     private long balance;
     private String[] emploees;
     private String adress;

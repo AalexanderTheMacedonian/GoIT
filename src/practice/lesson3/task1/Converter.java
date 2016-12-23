@@ -11,7 +11,7 @@ public class Converter {
         this.course = course;
     }
 
-    public double convert(double uah){
-        return uah*course;
+    public double convert(double uah) {
+        return uah * course;
     }
 }

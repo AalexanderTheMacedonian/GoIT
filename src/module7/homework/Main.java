@@ -48,7 +48,7 @@ public class Main {
         splitByCity(list);
     }
 
-    private static void splitByCity(List<Order> list) {
+    private static List<List<Order>> splitByCity(List<Order> list) {
         List<List<Order>> uniqueCityList = new ArrayList<>();
         Set<String> uniqueCities = new HashSet<>();
         for (Order order : list) {
@@ -68,6 +68,7 @@ public class Main {
                 }
             }
         }
+        return uniqueCityList;
     }
 
     private static void splitByCurrency(List<Order> list) {

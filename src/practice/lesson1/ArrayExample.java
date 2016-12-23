@@ -17,12 +17,11 @@ public class ArrayExample {
         int index = array.length - 1;
         while (index >= 0) {
             System.out.println(array[index]);
-            index --;
+            index--;
         }
 
 
-
-        for (int i = 0; i < array1.length; i++){
+        for (int i = 0; i < array1.length; i++) {
             System.out.println(array1[i]);
         }
 

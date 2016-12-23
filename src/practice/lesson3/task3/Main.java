@@ -23,7 +23,7 @@ public class Main {
     }
 
     private static long sumOfSalarys(Worker[] workers) {
-        long sum=0;
+        long sum = 0;
         for (Worker worker : workers) sum += worker.getSalary();
         return sum;
     }

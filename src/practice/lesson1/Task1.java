@@ -11,8 +11,8 @@ public class Task1 {
         String[] names = {"Test1", "Test2", "Test3", "Test4", "Test5", "Test6"};
 
         int count = 0;
-        for(int bal : balances){
-            if(bal > 1000) {
+        for (int bal : balances) {
+            if (bal > 1000) {
                 count += 1;
             }
 
@@ -23,8 +23,8 @@ public class Task1 {
         int indexOwners = 0;
         int index = 0;
 
-        for(int bal : balances){
-            if(bal > 1000) {
+        for (int bal : balances) {
+            if (bal > 1000) {
                 owners[indexOwners] = names[index];
                 indexOwners++;
             }

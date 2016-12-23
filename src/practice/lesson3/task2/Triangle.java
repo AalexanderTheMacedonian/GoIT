@@ -15,7 +15,7 @@ public class Triangle {
     double line3;
 
     public Triangle(int x1, int y1, int x2, int y2, int x3, int y3) {
-        if((x3-x1)/(x2 - x1) == (y3 - y1)/(y2-y1)){
+        if ((x3 - x1) / (x2 - x1) == (y3 - y1) / (y2 - y1)) {
             System.err.println("ALL THE POINT IN A 1 LINE");
         }
         this.x1 = x1;
@@ -27,32 +27,33 @@ public class Triangle {
     }
 
 
-    private double square(){
-        line1 = calculateLine(x1,y1,x2,y2);
-        line2 = calculateLine(x2,y2,x3,y3);
-        line3 = calculateLine(x3,y3,x1,y1);
+    private double square() {
+        line1 = calculateLine(x1, y1, x2, y2);
+        line2 = calculateLine(x2, y2, x3, y3);
+        line3 = calculateLine(x3, y3, x1, y1);
 
         double perimeter = calculatePerimeter(line1, line2, line3);
-        double halfOfPeremetr = perimeter/2;
-        return Math.sqrt(halfOfPeremetr * (halfOfPeremetr - line1)*(halfOfPeremetr-line2)*(halfOfPeremetr-line3));
+        double halfOfPeremetr = perimeter / 2;
+        return Math.sqrt(halfOfPeremetr * (halfOfPeremetr - line1) * (halfOfPeremetr - line2) * (halfOfPeremetr - line3));
     }
 
 
     private double calculateLine(int x1, int y1, int x2, int y2) {
 
-        return Math.sqrt(Math.pow((x1-x2), 2) + Math.pow((y1-y2), 2));
+        return Math.sqrt(Math.pow((x1 - x2), 2) + Math.pow((y1 - y2), 2));
     }
 
     private double calculatePerimeter(double line1, double line2, double line3) {
-        return line1+line2+line3;
+        return line1 + line2 + line3;
     }
 
     public double getSquare() {
 
-        return square() ;
+        return square();
     }
-    public double getPerimeter(){
-        return calculatePerimeter(line1,line2,line3);
+
+    public double getPerimeter() {
+        return calculatePerimeter(line1, line2, line3);
     }
 
 }
