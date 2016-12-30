@@ -42,6 +42,6 @@ public class AbstractDAOImpl<T> implements AbstractDAO<T> {
 
     @Override
     public T get(long id) {
-        return null;
+        return list.get((int) id);
     }
 }
