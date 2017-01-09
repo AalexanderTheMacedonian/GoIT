@@ -5,7 +5,7 @@ import module4.homework.Currency;
 /**
  * Created by alexandrsemenov on 09.12.16.
  */
-public class Order {
+public class Order implements Comparable<Order>{
     private long id;
     private int price;
     private Currency currency;
@@ -45,5 +45,22 @@ public class Order {
 
     public User getUser() {
         return user;
+    }
+
+    @Override
+    public int compareTo(Order o) {
+        return (int) (id - o.getId());
+    }
+
+    @Override
+    public String toString() {
+        return "Order{" +
+                "id=" + id +
+                ", price=" + price +
+                ", currency=" + currency +
+                ", itemName='" + itemName + '\'' +
+                ", shopIdentificator='" + shopIdentificator + '\'' +
+                ", user=" + user +
+                '}';
     }
 }
