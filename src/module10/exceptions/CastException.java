@@ -1,4 +1,4 @@
-package module10;
+package module10.exceptions;
 
 import module7.homework.User;
 

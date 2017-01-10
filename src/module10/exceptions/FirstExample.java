@@ -1,4 +1,4 @@
-package module10;
+package module10.exceptions;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -29,7 +29,7 @@ public class FirstExample {
 
 
             Exception exception = new Exception("Some exception", e);
-            //throw exception;
+            //throw exception; - кидает ошибку
 
         }
 

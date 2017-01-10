@@ -1,4 +1,4 @@
-package module10;
+package module10.exceptions;
 
 /**
  * Created by alexandrsemenov on 10.01.17.

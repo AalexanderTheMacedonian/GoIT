@@ -1,4 +1,4 @@
-package module10;
+package module10.exceptions;
 
 import java.io.File;
 import java.io.IOException;

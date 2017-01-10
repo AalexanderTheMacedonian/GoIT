@@ -1,4 +1,4 @@
-package module10;
+package module10.exceptions;
 
 import java.util.ArrayList;
 import java.util.List;
