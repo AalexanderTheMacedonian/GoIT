@@ -15,7 +15,7 @@ import java.util.stream.Collectors;
 public class Main {
     public static void main(String[] args) {
 
-        User user1 = new User(1, "Alex", "Black", "NewYork", 5000);
+        User user1 = new User(1, "Alex", "Black", "LasVegas", 5000);
         User user2 = new User(2, "Bob", "Marley", "Buffalo", 10000);
         User user3 = new User(3, "Tom", "Green", "LosAngeles", 3000);
         User user4 = new User(4, "Jack", "Brown", "LasVegas", 0);
@@ -71,7 +71,6 @@ public class Main {
         delLessPrice(list);
         splitForTwoLists(list);
         splitForCities(list);
-
     }
 
     private static Map<String, List<Order>> splitForCities(List<Order> list) {
