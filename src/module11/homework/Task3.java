@@ -32,9 +32,7 @@ public class Task3 {
         String replaced = replacer(fileName, map);
 
         try {
-            fileWriter = new FileWriter(fileName, true);
-            bufferedWriter = new BufferedWriter(fileWriter);
-            bufferedWriter.append(System.lineSeparator());
+            bufferedWriter = new BufferedWriter(new FileWriter(fileName, true));
             bufferedWriter.append(replaced);
             file = new File(fileName);
         } catch (IOException e) {

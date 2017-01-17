@@ -33,8 +33,7 @@ public class Task2 {
         String replaced = replacer(fileName, map);
 
         try {
-            fileWriter = new FileWriter(fileName);
-            bufferedWriter = new BufferedWriter(fileWriter);
+            bufferedWriter = new BufferedWriter(new FileWriter(fileName));
             bufferedWriter.write(replaced);
             file = new File(fileName);
         } catch (IOException e) {
